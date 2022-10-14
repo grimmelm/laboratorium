@@ -1,0 +1,9 @@
+{% for post in site.posts %}
+	<h4><a href="{{post.url}}" class="title"> {{post.title}}</a></h4>
+    	<div class="post unit">
+ 	   		{{ post.excerpt }}
+		</div>
+	<div class="smaller caption unit lastUnit">
+			{{page.date | date: "%B %-d, %Y"}} <br/>
+	</div>
+{% endfor %}

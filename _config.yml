@@ -18,16 +18,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: The Laboratorium (3d ser.)
+title: The Laboratorium (2d ser.)
 email: james.grimmelmann@cornell.edu 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A blog by James Grimmelmann.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+twitter_username: grimmelm
 github_username:  jekyll
+author: James Grimmelmann
 
 # Build settings
 theme: minima
@@ -35,6 +34,26 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+permalink: /:year-:month-:day-:title
+
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+      #type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "tags"
+    values:
+      layout: "tags"
+
+collections:
+  tags:
+    output: true
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

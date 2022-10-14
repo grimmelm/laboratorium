@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<h3>Posts about {{ page.tag-friendly-name }}</h3>
+<p/>
+
+
+  {% for post in site.posts %}
+	{% if post.tags contains page.tag-name %}
+	  <h4><a href="{{post.url}}" class="title"> {{post.title}}</a></h4>
+		  <div class="post unit">
+				  {{ post.content }}
+		  </div>
+	  <div class="smaller caption unit lastUnit">
+			  {{post.date | date: "%B %-d, %Y"}} <br/>
+  	</div>
+	{% endif %}
+  {% endfor %}
+</div>

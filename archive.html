@@ -1,0 +1,22 @@
+---
+title: Archive
+layout: default
+permalink: /archive
+---
+
+<h3>From the archives</h3>
+
+{% for post in site.posts %}
+
+	<h4><a href="{{post.url}}" class="title"> {{post.title}}</a></h4>
+	
+	<div class="text line">
+		<div class="post unit">
+				{{ post.excerpt }}
+		</div>
+	
+		<div class="smaller caption unit lastUnit">
+				{{post.date | date: "%B %-d, %Y"}} <br/>
+		</div>
+	</div>
+{% endfor %}

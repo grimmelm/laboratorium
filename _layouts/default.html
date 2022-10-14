@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+	{% include labheader.html %}
+	<title>{{post.title}}</title>
+</head>
+
+<body>
+<div class="page">
+	{% include labtitle.html %}	
+
+	<div class="body">				
+	
+	{{content}}
+
+	{% include navbar.html %}
+		
+	</div>	
+	</div><!-- /body-->
+</div><!--/page-->	
+
+{% include labfooter.html %}
+
+</body>
+</html>

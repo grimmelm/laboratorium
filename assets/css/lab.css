@@ -53,20 +53,12 @@
 			font-style: italic;}
 			 
 		h3 {
-			font-size: 1.6em; 						/* tag and search page headers */
+			font-size: 2em; 						
 			letter-spacing: 0.05em; 
-			text-transform: lowercase; 
-			padding-bottom: 14px; 
-			opacity: 0.5;				 
+			padding-bottom: 45px; 
+			text-weight: bold;
+			font-style: italic;
 			width: 500px;} 
-				
-			#dsq-content h3 {						/* disqus */
-				font-size: 1.5em; 
-				letter-spacing: 0.05em; 
-				padding-bottom: 0.25em; 
-				opacity: 1; 
-				padding-left: 0; 
-				text-transform: none;}
 				
 			.no-search-results {padding-top: 99px;}	
 			
