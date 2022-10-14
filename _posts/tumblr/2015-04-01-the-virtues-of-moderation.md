@@ -1,0 +1,22 @@
+---
+layout: post
+title: The Virtues of Moderation
+date: '2015-04-01T15:30:07-04:00'
+tags:
+- scholarship
+tumblr_url: https://2d.laboratorium.net/post/115230365815/the-virtues-of-moderation
+---
+I’m happy to announce that my new article on online community governance, [_The Virtues of Moderation_](http://james.grimmelmann.net/files/articles/virtues-of-moderation.pdf), has been published in the Yale Journal of Law and Technology. The core of the paper is a new taxonomy of moderation techniques. Moderators can _exclude_ unhelpful members from a community, _price_ access, _organize_ content, or influence community _norms_. Each of these different “verbs” of moderation can be implemented in different ways. For example, moderators could act _ex ante_ to prevent bad behavior, or _ex post_ to clean it up after the fact; moderation could be carried out _manually_ by humans or _automatically_ by computers; and so on. And characteristics of the community, such as its _size_ and whether it has robust _identities_, influence the success or failure of the various techniques. I think (although I’m obviously biased here) that the taxonomy is detailed enough to provide useful insights while also being general enough to work in numerous settings.
+
+To bring the insights home, I give case studies of four online communities: [MetaFilter](http://www.metafilter.com), [Reddit](https://www.reddit.com), [Wikipedia](http://en.wikipedia.org/wiki/Main_Page), and the Los Angeles Times’s ill-fated [wikitorial](http://en.wikipedia.org/wiki/Wikitorial). They show the diversity of moderation, illustrate the kinds of tradeoffs moderators must make, and show that while moderation is essential, not all moderation is successful or praiseworthy. The article finishes with short discussions of Section 230 and Section 512’s immunities for online services; thinking about them as regulations of the moderation process shows what they get right and wrong.
+
+_The Virtues of Moderation_ has been gestating for an unusually long time: I started working on this taxonomy in late 2006. (My thanks especially to [Nicholas Bramble](https://twitter.com/nbramble), whose own work in progress on a related topic convinced me to dust of my draft and start writing again last summer.) It closes out a project on online regulation that started with [_Regulation by Software_](http://james.grimmelmann.net/files/articles/virtues-of-moderation.pdf) and continued with [_The Internet Is a Semicommons_](http://james.grimmelmann.net/files/articles/semicommons.pdf) and [_Dr. Generative_](http://james.grimmelmann.net/files/articles/dr-generative.pdf). Despite the drawn-out process, this was a fun paper to write. I enjoyed diving into the literature on user interface design patterns and on community governance; I enjoyed the chance to analyze recent events like the celebrity photo hacks; and I especially enjoyed writing what is, to my knowledge, the first law review article to discuss goatse or Ronbledore. My editors at YJoLT were outstanding and did a fine job both in preparing the manuscript and in suggesting substantive improvements.
+
+Here’s the abstract:
+
+> TL;DR–On a Friday in 2005, the Los Angeles Times launched an experiment: a “wikitorial” on the Iraq War that any of the paper’s readers could edit. By Sunday, the experiment had ended in abject failure: vandals overran it with crude profanity and graphic pornography. The wikitorial took its inspiration and its technology from Wikipedia, but missed something essential about how the “the free encyclopedia that anyone can edit” staves off abuse while maintaining its core commitment to open participation.
+> 
+> The difference is _moderation_: the governance mechanisms that structure participation in a community to facilitate cooperation and prevent abuse. Town meetings have moderators, and so do online communities. A community’s moderators can pro- mote posts or hide them, honor posters or shame them, recruit users or ban them. Their decisions influence what is seen, what is valued, what is said. They create the conditions under which cooperation is possible.
+> 
+> This Article provides a novel taxonomy of moderation in online communities. It breaks down the basic verbs of moderation–exclusion, pricing, organizing, and norm-setting–and shows how they help communities walk the tightrope between the chaos of too much freedom and the sterility of too much control. Scholars studying the commons can learn from moderation, and so can policy-makers debating the regulation of online communities.
+

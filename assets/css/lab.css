@@ -1,0 +1,347 @@
+@font-face { 
+	font-family: 'Goudy';
+	src: url('https://laboratorium.net/fonts/goudy-regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face { 
+	font-family: 'Goudy';
+	src: url('https://laboratorium.net/fonts/goudy-italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+
+	html, body {background-color: #fcfbf3;}
+	
+	.page {
+		width: 714px;
+		margin: 60px 100px 0px;}
+		
+	body {
+		color: #50504e;
+		font-family: "Goudy", Times, "Times New Roman", serif; 
+		font-size: 15px;}
+		
+	/* <------- default... -------> */
+		/* <------- ...spacing -------> */
+		ul, ol, dl, p, blockquote {line-height: 1.5em;}
+		p {text-align: justify;}
+		p + p {text-indent: 30px;}
+		
+		/* <------- ...headers -------> */
+		h1 {
+			color: #C90707; 
+			font-size: 30px; 
+			letter-spacing: 0.05em; 
+			padding-bottom: 8px; 
+			text-indent: -45px;
+			width: 500px;}
+			
+			h1 .title {color: #50504e;}
+			h1 a:hover {text-decoration: none;}
+			
+		h2 { 
+			width: 500px;				
+			letter-spacing: 0.05em; 				/* description */
+			padding-bottom: 15px; 
+			line-height: 22px;
+			padding-left: 30px; 
+			font-style: italic;}
+			 
+		h3 {
+			font-size: 1.6em; 						/* tag and search page headers */
+			letter-spacing: 0.05em; 
+			text-transform: lowercase; 
+			padding-bottom: 14px; 
+			opacity: 0.5;				 
+			width: 500px;} 
+				
+			#dsq-content h3 {						/* disqus */
+				font-size: 1.5em; 
+				letter-spacing: 0.05em; 
+				padding-bottom: 0.25em; 
+				opacity: 1; 
+				padding-left: 0; 
+				text-transform: none;}
+				
+			.no-search-results {padding-top: 99px;}	
+			
+		h4 {
+			font-size: 14px; 						/* dates, titles of posts */
+			letter-spacing: 0.1em; 
+			text-transform: uppercase; 
+			padding-bottom: 11px;
+			width: 500px;
+			line-height: 22px;}
+			 
+			h4.notes-title {padding-bottom: 3px;}	/* notes */
+			
+		h5 {
+			padding: 22px 0px 11px;
+			font-variant: small-caps;
+			letter-spacing: 0.12em;
+			font-size: 17px;
+			padding: 22px 0px 0px;
+			text-transform: lowercase;}	
+			
+			.post h2, .h2 {
+				padding: 22px 0px 11px;
+				font-variant: small-caps;
+				font-style: normal;
+				font-size: 17px;
+				letter-spacing: 0.12em;
+				padding: 22px 0px 0px;
+				text-transform: lowercase;}	
+				
+			.post h3, .h3 {
+				font-size: 15px;
+				font-style: italic;
+				opacity: 1;
+				padding: 22px 0px 0px;
+				text-transform: none;}		
+			
+			ul li:first-child h5{padding-top: 0px;}
+			h5 + p {text-indent: 0;}
+			
+		/* <------- ...links & images-------> */
+		a {color: #C90707; text-decoration: none;}
+		a.title {color: #50504e;}
+		a:focus, a:hover, .searchBox:hover {color: #913426; text-decoration: underline;}
+		img {display:block; padding-bottom: 11px;}
+		p + img {padding-top: 11px;}
+		
+		/* <------- ...lists -------> */
+		ul, ol {padding: 22px 0px;}
+		ol li {list-style-type: decimal;}
+		ul li {list-style-type: disc;}
+		.simple-list li {list-style-type:none; margin-left: 0px;}
+		.horizontal-list li {display: inline; list-style-type: none; margin: 0px;}
+		
+		/* <------- ...blockquotes -------> */
+		blockquote {padding: 22px 30px;}
+		cite {display:block; text-align:right; padding-top: 10px;}
+	
+		/* <------- ...formatting -------> */
+		em, i {font-style: italic;}
+		strong {font-weight:bold;}
+		code {color:#0B8C8F; font-family: 'Courier', 'Courier New', monospace; font-size: 12px; background-color: #f6f4e8;}
+		
+		.small-caps {font-variant: small-caps; text-transform: lowercase; letter-spacing: 0.1em;}
+		sup, sub {line-height: 1em; font-size: smaller;}
+		sup {vertical-align: super;}
+		sub {vertical-align: sub;}
+	
+		.smaller {font-size: 12px; line-height: 1.5em;}
+	/*	.larger {font-size: 30px; line-height: 1.26em;}*/
+		
+		/* <------- extended alignment -------> */
+		.align-right {text-align: right;}
+		.align-left {text-align: left;}
+		.align-center {text-align: center;}
+		.no-indent {text-indent: 0px;}
+		
+		/* <------- extended spacing -------> */
+		.no-padding-top {padding-top: 0px;}
+		.no-padding-bottom {padding-bottom: 0px;}
+		.no-padding-right {padding-right: 0px;}
+		.no-padding-left {padding-left: 0px;}
+		.no-padding {padding: 0px;}
+		
+		.padding-top {padding-top: 22px;}
+		.padding-bottom {padding-bottom: 22px;}
+		.padding-right {padding-right: 22px;}
+		.padding-left {padding-left: 22px;}
+		.padded {padding: 22px;}
+		
+	/* <------- header -------> */
+	.header {margin-bottom: 99px;}
+	
+	.header-image {padding-bottom: 22px; max-width: 500px;}	
+		
+	/* <------- posts in general -------> */
+	.post {
+		width: 500px;
+		padding-bottom: 93px;}
+		
+	.caption {
+		padding-left: 22px; 
+		width: 190px; 
+		float: left; /* added this to mitigate word-wrapping issue in captions */
+		/* from: http://perishablepress.com/press/2010/06/01/wrapping-content/ */
+		/*white-space: pre;    */       /* CSS 2.0 */
+		/*white-space: pre-wrap; */ 	/* CSS 2.1 */
+		/*white-space: pre-line;*/	 	/* CSS 3.0 */
+		white-space: -pre-wrap;     /* Opera 4-6 */
+		white-space: -o-pre-wrap;   /* Opera 7 */
+		white-space: -moz-pre-wrap; /* Mozilla */
+		white-space: -hp-pre-wrap;  /* HP Printers */
+		word-wrap: break-word;      /* IE 5+ */}
+		
+		.caption p {padding-bottom: 11px; text-indent: 0px; text-align: left;}
+		.caption blockquote {padding: 0px 22px;}
+		
+	.permalink {position: relative; text-indent: 0px;}
+		
+	.infinity {
+		display: block;
+		padding: 25px;
+		font-size: 26px; 
+		position: absolute;
+		top: 0;
+		left: -60px;
+		top: -27px;}		
+		
+		.infinity:hover {
+			border: 1px solid #fcfbf3;
+			color: #913426;
+			border-radius: 50px;
+			-moz-border-radius: 50px;
+			-webkit-border-radius: 50px;
+			text-decoration: none;}
+			
+	/* <------- tags -------> */		
+	p.tags {text-indent: 0px; opacity: 0.7;}
+	a.tag {color: #50504e;}
+	 
+	p + .tags, .description + .tags, .line + .tags {padding-top: 6px;}
+	.audio p + .tags {padding-top: 0px;}
+	
+	/* <------- answers -------> */
+	.question {line-height: 22px; text-indent: -4px;}
+	.question:before {content:'\201C';}
+	.question:after  {content:'\201D';}
+	.asker {margin-bottom: 22px;}
+		
+	/* <------- audio -------> */	  			
+	.album-art {
+		width: 189px; 
+		position: relative;
+		background-image: url(http://static.tumblr.com/od9rmlx/WAUl8ht1h/music-placeholder.png);
+		min-width: 189px;
+		min-height: 189px;}
+		
+	  .audio-player-wrap {
+		background: black;
+		bottom: 0px;
+		height: 27px;
+		margin: 0px;
+		opacity: 0.25;
+		position: absolute;
+		width: 100%;}
+			  
+	.audio-player-box {
+		background: black;
+		bottom: 0px;
+		position: absolute;
+		width: 37px;}
+
+	  .audioplayer {
+		  height: 27px;
+		width: 27px;
+		margin-left: 5px;
+		overflow: hidden;}
+		
+	.audio .info {padding-left: 22px;}	
+	
+	.track-info {padding-bottom: 22px;}	
+		.audio .info p {text-indent: 0;}		
+		
+	/* <------- chat -------> */
+	.label {width: 99px;}
+	
+	.chat .line {
+		padding: 8px 0px;
+		border-bottom: 1px solid #e2e1da;}
+		
+	.chat .line:first-child {padding-top: 0px;}	
+	
+	/* <------- links -------> */
+	
+	/* <------- photos -------> */
+	.photo-image {padding-bottom: 15px;}
+	.photo-image + p {text-indent: 0;} 
+	.photo-image img {padding-bottom: 0px;}
+		
+	/* <------- quotes -------> */	
+	.quotation {padding: 0px; font-style: normal;}
+	
+	blockquote.long {padding-bottom: 11px;}
+	
+	blockquote.short, blockquote.medium {
+		font-size: 24px; 
+		line-height: 33px; 
+		padding-bottom: 11px;}
+
+		
+	/* <------- text -------> */		
+	
+	/* <------- video -------> */
+	.video-embedded {padding-bottom: 15px;}	
+	.video-embedded + p {text-indent: 0;} 
+	
+	/* <------- footer -------> */
+	.footer {padding-bottom: 60px; width: 500px;}
+	.footer .mod {padding-top: 50px;}
+	.footer .description {text-align: center;}
+	
+	.pagination {
+		border-top: 1px solid #50504e;
+		width: 500px;
+		margin-bottom: 37px;}
+		
+		.prev p, .next p {
+			font-size: 14px;
+			letter-spacing: 3px;
+			text-transform: uppercase;
+			padding: 13px 0px 7px;}
+		
+	.navigation {
+		padding: 0px;
+		margin-bottom: 3px;}
+		
+	/*search*/
+	.search-box {
+		border: 1px solid #fcfbf3;
+		background: #fcfbf3;
+		color: #C90707;
+		font-family: "Minion Pro", Times, "Times New Roman", serif; 
+		padding: 2px;
+		width: 100px;
+		*height: 18px; 			/* IE7 and below */
+		*padding-bottom: 0px; 	/* IE7 and below */}
+
+	.search-box:hover {
+		color: #913426;
+		text-decoration: underline;
+		cursor: pointer;}
+		
+	.search-box:focus {border: 1px solid #50504e;}
+	
+	/* <------- notes -------> */
+	.post-notes {padding-bottom: 99px;}
+	.discussion-notes {width: 500px;}
+	
+	#disqus_thread {
+		border-top: 1px solid #50504e; 
+		padding-top: 1em;
+		padding-bottom: 3em;}
+		
+	.notes {padding: 0px;}
+	.avatar {display: none;}
+	
+	{block:IfNotIndentedParagraphsWithNoBottomMargin}
+	p + p {text-indent: 0px;}
+	ul, ol {padding: 0px;}
+	p, ul, blockquote {margin-bottom: 1em;}
+	h4 {margin-top: -16px;}
+	blockquote {padding: 0px 30px;}
+	img {margin-bottom: 0;}
+	img + img {padding-top: 1em;}
+	.chat .line p {margin-bottom: -1px;}
+	.track-info p {margin-bottom: 0px;}
+	.link-title {margin-bottom: 0px;}
+	{/block:IfNotIndentedParagraphsWithNoBottomMargin}

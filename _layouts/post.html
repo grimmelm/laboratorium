@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	{% feed_meta %}
+	{% seo %}
+	
+	<title>{{post.title}}</title>
+	
+<!--	<meta name="description" content="{block:IndexPage}{block:Description}{MetaDescription}{/block:Description}{/block:IndexPage}{block:PermalinkPage}{PostSummary}{/block:PermalinkPage}" />
+	<link rel="shortcut icon" href="{Favicon}" />
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="{RSS}"/> -->
+					
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" media="all" href="https://static.tumblr.com/od9rmlx/8vzl2oidp/framework.css"/>
+	<link title="Laboratorium Styles" rel="stylesheet"  type="text/css" href="/assets/css/lab.css"/>
+	<link title="Featherlight Styles" rel="stylesheet" type="text/css" href="//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.css"  />
+
+	<!-- scripts -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript"> 
+		var auto = $.jqwidont.auto(); // is automatic initialisation enabled?
+		$.jqwidont.auto(false);       // disable it
+		$('h4').widont();
+	</script> 
+</head>
+
+<body>
+<div class="page">	
+	<div class="header">
+	<h1>&#x00B6; <span class="title"> The Laboratorium (2d Ser.)</span></a></h1>
+	<h2>
+	<span style="font-style:normal">A blog by <a href="http://james.grimmelmann.net">James Grimmelmann</a></span><br/><span style="line-height: 16px"><br/>Soyez r&eacute;gl&eacute; dans votre vie et ordinaire afin<br/> d'&ecirc;tre violent et original dans vos oeuvres.<br/></span>
+	</h2>
+	</div>
+
+	<div class="body">	
+				
+		<h4><a href="{{page.url}}" class="title"> {{page.title}}</a></h4>
+					
+		<div class="text line">
+		<div class="post unit">
+			{{content}}
+			
+			<p class="smaller tags"><em>
+				{% for tag in page.tags %}
+				&#x2733; <a href="{TagURL}" class="tag">{{tag}}</a>&nbsp;
+				{% endfor %}
+				</em></p>
+			
+		</div>
+		<div class="smaller caption unit lastUnit">
+			{{page.date | date: "%B %-d, %Y"}} <br/>
+		</div>
+		</div>
+		</div>	
+		<!-- /text -->
+		
+	
+	
+	
+	<!-- footer -->
+	<div class="footer">		
+		<div class="pagination line">
+			<div class="unit size1of2 prev">
+				{% if page.next %}
+				<p>&larr; <a href="{{page.next.url}}">{{page.next.title}}</a></p>
+				{% endif %}
+			</div>
+			<div class="unit size1of2 lastUnit next">	
+				{% if page.previous %}
+				<p class="align-right"><a href="{{page.previous.url}}">{{page.previous.title}}</a> &rarr;</p>
+				{% endif %}
+			</div>
+		</div> 
+
+
+		<ul class="horizontal-list navigation no-indent">
+			<!--{block:HasPages}
+				{block:Pages}<li><a href="{URL}">{Label}</a> &bull; </li>{/block:Pages}
+			{/block:HasPages} -->
+			<li><a href="/archive">Archive</a> &bull; </li>
+			<li><a href="{RSS}">RSS</a> &bull; </li>
+		</ul>
+		
+	</div>
+	
+	
+	</div><!-- /body-->
+	
+</div><!--/page-->	
+
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
