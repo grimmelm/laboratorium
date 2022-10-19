@@ -178,6 +178,9 @@
 		
 	.permalink {position: relative; text-indent: 0px;}
 		
+	a.datelink { color: #50504e; }	
+	a.datelink:hover { color: #913426; }	
+	
 	.infinity {
 		display: block;
 		padding: 25px;

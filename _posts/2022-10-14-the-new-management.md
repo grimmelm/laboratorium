@@ -1,7 +1,8 @@
 ---
 title: The New Management
 tags:
-- meta technology
+- meta
+- technology
 ---
 The blog has moved.
 

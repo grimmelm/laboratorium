@@ -1,9 +1,10 @@
 {% for post in site.posts %}
+	<p class="permalink"><a href="{{post.url}}" class="infinity">&#x00BB;</a></p>
 	<h4><a href="{{post.url}}" class="title"> {{post.title}}</a></h4>
     	<div class="post unit">
  	   		{{ post.excerpt }}
 		</div>
 	<div class="smaller caption unit lastUnit">
-			{{page.date | date: "%B %-d, %Y"}} <br/>
+		<a class="datelink" href="{{post.url}}">{{page.date | date: "%B %-d, %Y"}}</a><br/>
 	</div>
 {% endfor %}

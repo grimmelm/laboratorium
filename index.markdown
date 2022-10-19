@@ -12,7 +12,7 @@ layout: default
 	</div>
 
 	<div class="smaller caption unit lastUnit">
-			{{post.date | date: "%B %-d, %Y"}} <br/>
+		<a class="datelink" href="{{page.url}}">{{post.date | date: "%B %-d, %Y"}}</a><br/>
 	</div>
 </div>
 {% endfor %}

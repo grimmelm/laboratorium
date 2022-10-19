@@ -1,7 +1,8 @@
 ---
 title: Reading Without Footprints
 tags:
-- technology law
+- technology
+- law
 ---
 The phrase ["I'm not going to link to it"](https://www.google.com/search?q=%22I%27m+not+going+to+link+to+it%22) has 385,000 results on Google. The idea is usually that the author wants to explain how  [someone is wrong on the Internet](https://xkcd.com/386/), but doesn't want to reward that someone with pageviews, ad impressions, and other attention-based currencies. "Don't feed the trolls," goes the conventional wisdom, telling authors not to write about them. But in an age when silent analytics sentinels observe and report everything anyone does online, _readers_ can feed the trolls without saying a word.
 
